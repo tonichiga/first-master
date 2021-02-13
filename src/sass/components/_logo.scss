@@ -1,0 +1,40 @@
+.first-logo,
+.second-logo,
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.86;
+  letter-spacing: 0.03em;
+}
+
+.second-logo {
+  color: #000000;
+}
+
+.footer-logo {
+  color: #ffffff;
+}
+.first-logo {
+  margin-right: 7px;
+  color: $accent-color;
+}
+.third-logo {
+  display: block;
+  text-align: end;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.third-logo-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}
+.logo-wrapper {
+  margin-bottom: 5px;
+}

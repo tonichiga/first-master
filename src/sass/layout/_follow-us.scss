@@ -1,0 +1,113 @@
+.follow-us-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $second-text-color;
+}
+.follow-us-container {
+  display: flex;
+  flex-direction: column;
+}
+.follow-us-form {
+  display: block;
+  max-width: 450px;
+  margin-bottom: 20px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.8;
+  color: $second-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  transition: border 250ms $defaul-cubic-bezier;
+}
+.follow-us-form {
+  padding-left: 16px;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.follow-us-btn-container {
+  margin: 0 auto;
+}
+.follow-us-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.5;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: $second-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.follow-us-btn {
+  &::after {
+    content: "";
+    background-image: url(../image/icon-send.svg);
+    background-repeat: no-repeat;
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// ДО ЭТОГО
+
+@media screen and (max-width: 767px) {
+  .follow-us-form {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .follow-us {
+    display: block;
+  }
+  .follow-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .follow-us-form {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+  }
+
+  .follow-us-btn-title {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    flex-direction: unset;
+  }
+  .follow-us-form {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .follow-us-title {
+    text-align: unset;
+  }
+}

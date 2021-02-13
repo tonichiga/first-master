@@ -1,0 +1,142 @@
+.features {
+  padding-top: 60px;
+}
+
+.features-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: $title-text-color;
+}
+
+.features-item {
+  padding-bottom: 60px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.features-item-container {
+  position: relative;
+  box-sizing: inherit;
+}
+.features-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box;
+}
+.features-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+  background: rgba(47, 48, 58, 0.8);
+  box-sizing: border-box;
+}
+
+.features {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .features-text {
+    width: 100%;
+    height: 70px;
+  }
+  .features-item-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features {
+    display: none;
+  }
+  .features-item {
+    display: flex;
+  }
+  .feature-img {
+    display: block;
+    width: 226px;
+    height: 226px;
+    margin-right: 0;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+  }
+  .features-item-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $second-text-color;
+    .features-item {
+      display: flex;
+      justify-content: center;
+    }
+    .features-title {
+      margin-bottom: 50px;
+    }
+    .features-text {
+      width: 370px;
+      height: 70px;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+  .features-item-list {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .features .features-title,
+  .our-team .our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-top: 0px;
+  }
+
+  .features-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .features-img {
+    width: 370px;
+    height: 294px;
+  }
+  .features-item {
+    padding-bottom: 0;
+  }
+}

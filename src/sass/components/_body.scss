@@ -1,0 +1,19 @@
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.site-nav.list {
+  &.current {
+    color: $accent-color;
+  }
+}
+
+.hover-focus {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

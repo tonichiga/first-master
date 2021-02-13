@@ -1,0 +1,195 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 178px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/mobile-image/hero-section/mobile-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: inherit;
+}
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.8),
+//         rgba(47, 48, 58, 0.8)
+//       ),
+//       url("../image/mobile-image/hero-section/mobile-hero@x2.jpg");
+//   }
+// }
+
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  color: $second-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  animation-name: heroAction, heroActionOpacity;
+  animation-duration: 1500ms;
+  animation-timing-function: $defaul-cubic-bezier;
+}
+@keyframes heroAction {
+  from {
+    transition: scale(1.15);
+  }
+  to {
+    transition: scale(1);
+  }
+}
+@keyframes heroActionOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.general-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $second-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  animation-name: heroAcrionButton;
+  animation-timing-function: $defaul-cubic-bezier;
+  animation-duration: 3000ms;
+  animation-direction: alternate;
+}
+@keyframes heroAcrionButton {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/mobile-image/hero-section/mobile-hero.jpg);
+    max-width: 480px;
+    background-size: contain;
+    // background-position: center;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../image/mobile-image/hero-section/mobile-hero@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/tablet-image/hero-section/tablet-hero.jpg);
+    // max-width: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 198px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../image/tablet-image/hero-section/tablet-hero@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/hero-section/hero-tech.jpg);
+    // max-width: 480px;
+    // background-size: cover;
+    background-size: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 198px;
+    // height: 600px;
+    // width: 1200px;
+    padding-top: 280px;
+    padding-bottom: 187px;
+  }
+
+  .hero .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../image/hero-section/hero@2x.jpg);
+      // background-size: cover;
+      // background-position: center;
+      // background-size: auto;
+      // background-position: bottom;
+      // background-repeat: no-repeat;
+      // background-size: auto;
+    }
+  }
+}
