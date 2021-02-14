@@ -1291,6 +1291,12 @@ body {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-duration: 3000ms;
   animation-direction: alternate;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.general-btn:hover,
+.general-btn:focus {
+  box-shadow: 0 0 1px 2px #2196f3;
 }
 
 @keyframes heroAcrionButton {
@@ -1403,6 +1409,12 @@ body {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-us-container-svg:hover {
+  background-color: #2196f3;
+  fill: white;
 }
 
 .about-us {
@@ -1751,6 +1763,29 @@ body {
   margin-bottom: 30px;
 }
 
+.our-team-about-us {
+  position: relative;
+  z-index: 2;
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+}
+
+.our-team-about-us::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: -25px;
+  width: 120px;
+  height: 90px;
+  background-image: url(../image/our-team/quote.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
   .icon-container:not(:last-child) {
     margin-right: 0;
@@ -2044,6 +2079,15 @@ body {
   text-align: center;
 }
 
+.powered-by > a {
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.in-footer {
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .footer-main-container {
     display: block;
@@ -2055,9 +2099,10 @@ body {
   }
   .footer-main .link.logo {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-bottom: 20px;
     margin-right: 0px;
-    width: 153px;
   }
   .footer-main .footer {
     padding-left: 0px;
@@ -2067,7 +2112,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 231px;
+    width: 210px;
     margin-right: 165px;
     margin-bottom: 0;
   }
@@ -2079,7 +2124,6 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    width: 231px;
   }
   .footer-wrap {
     display: flex;
@@ -2093,34 +2137,29 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-wrap {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   .footer-main {
     box-sizing: border-box;
     background-color: #2f303a;
   }
   .footer-main .link.logo {
-    display: flex;
     margin-bottom: 20px;
     margin-right: 0px;
-    width: 153px;
   }
   .footer-main .footer {
     padding-left: 0px;
   }
-  .footer-main-container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+  .logo {
+    margin-right: 0;
   }
   .footer-address {
     text-align: center;
     display: inline-block;
-    width: 231px;
-    margin-right: 69px;
+    margin-right: 0px;
   }
   .footer.list {
     margin-top: 0px;
@@ -2133,6 +2172,9 @@ body {
   }
   .footer-main .footer-list-link:not(:last-child) {
     margin-bottom: 9px;
+  }
+  .powered-by {
+    text-align: center;
   }
 }
 

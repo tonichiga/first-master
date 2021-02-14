@@ -83,6 +83,11 @@
   animation-timing-function: $defaul-cubic-bezier;
   animation-duration: 3000ms;
   animation-direction: alternate;
+  transition: 250ms $defaul-cubic-bezier;
+}
+.general-btn:hover,
+.general-btn:focus {
+  box-shadow: 0 0 1px 2px $accent-color;
 }
 @keyframes heroAcrionButton {
   0% {

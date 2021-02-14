@@ -39,6 +39,11 @@
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  transition: 250ms $defaul-cubic-bezier;
+}
+.about-us-container-svg:hover {
+  background-color: $accent-color;
+  fill: white;
 }
 // ДО
 
