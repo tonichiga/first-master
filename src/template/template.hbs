@@ -1,0 +1,39 @@
+
+{{#each this}}
+{{#if this}}
+ <li class="portfolio-item-element">
+              <a href="#" class="portfolio-item-link">
+                <div class="portfolio-item-wrapper">
+                  
+                    <img
+                      class="item-link"
+                      src={{url}}
+                      alt="бизнес"
+                    />
+                  
+                  <!-- <img
+                    class="item-link"
+                    src="./image/portfolio/sections-image/techno.jpg"
+                    alt="список сотрудников"
+                    height="294"
+                  /> -->
+                  <div class="wrapper">
+                    <p class="portfolio-pre-text">
+                     {{description}}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="portfolio-text-container">
+                  <h2 class="portfolio-title">{{name}}</h2>
+                  <p class="portfolio-text">Цена: {{price}}</p>
+                </div>
+              </a>
+            </li>
+            {{/if}}
+            {{else}}
+            <li>
+            <h2 class="portfolio-empty-title">Здесь пока ничего нет</h2>
+            </li>
+            
+            {{/each}}

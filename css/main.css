@@ -872,7 +872,7 @@ body {
   .site .site-nav {
     display: flex;
     margin: 0px;
-    margin-right: 305px;
+    margin-right: 90px;
     padding: 0px;
   }
   .site .site-nav-list-item:not(:last-child) {
