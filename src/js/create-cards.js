@@ -39,7 +39,7 @@ function handlerCreateBake(e) {
   refs.list.innerHTML = "";
   refs.list.insertAdjacentHTML("beforeend", template(bakeItems));
 }
-if (location.pathname === "/portfolio.html") {
+if (location.pathname === "/first-master/portfolio.html") {
   refs.frost.classList.add("hover");
   refs.list.insertAdjacentHTML("beforeend", template(frostItems));
   createCard();
