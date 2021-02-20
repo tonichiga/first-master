@@ -10,13 +10,15 @@ const refs = {
   clean: document.querySelector(".clean"),
   bake: document.querySelector(".bake"),
   list: document.querySelector(".portfolio-item.list"),
+  link: document.querySelector(".portfolio-item-link"),
 };
 
 function createCard() {
   refs.wash.addEventListener("click", handlerCreateWash);
   refs.frost.addEventListener("click", handlerCreateFrost);
-  refs.clean.addEventListener("click", handlerCreateClean);
+  // refs.clean.addEventListener("click", handlerCreateClean);
   refs.bake.addEventListener("click", handlerCreateBake);
+  refs.list.addEventListener("click", handlerClickCard, true);
 }
 
 function handlerCreateWash(e) {
@@ -29,17 +31,20 @@ function handlerCreateFrost(e) {
   refs.list.innerHTML = "";
   refs.list.insertAdjacentHTML("beforeend", template(frostItems));
 }
-function handlerCreateClean(e) {
-  refs.frost.classList.remove("hover");
-  refs.list.innerHTML = "";
-  refs.list.insertAdjacentHTML("beforeend", template(cleanItems));
-}
+// function handlerCreateClean(e) {
+//   refs.frost.classList.remove("hover");
+//   refs.list.innerHTML = "";
+//   refs.list.insertAdjacentHTML("beforeend", template(cleanItems));
+// }
 function handlerCreateBake(e) {
   refs.frost.classList.remove("hover");
   refs.list.innerHTML = "";
   refs.list.insertAdjacentHTML("beforeend", template(bakeItems));
 }
-if (location.pathname === "/first-master/portfolio.html") {
+function handlerClickCard(e) {
+  e.preventDefault();
+}
+if (location.pathname === "/portfolio.html") {
   refs.frost.classList.add("hover");
   refs.list.insertAdjacentHTML("beforeend", template(frostItems));
   createCard();

@@ -6,8 +6,8 @@
   line-height: 24px;
 }
 .footer-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #2f303a;
 }
 
@@ -75,21 +75,20 @@
 }
 .footer-main-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   // padding-top: 90px;
 }
 
 // ДО
 
-.footer-main-container {
-  display: block;
-  // padding-top: 90px;
-}
 .footer-address {
-  margin-bottom: 60px;
   text-align: center;
 }
-
+.footer.list {
+  text-align: center;
+}
 .powered-by > a {
   padding-left: 10px;
   color: $second-text-color;
@@ -97,9 +96,16 @@
 .in-footer {
   color: white;
 }
-@media screen and (max-width: 767px) {
+.footer-address-container {
+  margin-bottom: 20px;
+}
+.follow-us {
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
+  .follow-us {
+    margin-top: 0;
+  }
   .footer-main-container {
     // display: flex;
     // justify-content: center;
@@ -130,7 +136,7 @@
     justify-content: center;
     align-items: center;
     width: 210px;
-    margin-right: 165px;
+    // margin-right: 65px;
     margin-bottom: 0;
   }
 
@@ -141,15 +147,20 @@
 
   .footer-address-container {
     display: flex;
+    align-items: baseline;
+
     text-align: center;
     flex-direction: column;
   }
   .footer-wrap {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-bottom: 60px;
-    padding-left: 60px;
+    justify-content: space-around;
+    // align-items: baseline;
+    // margin-bottom: 60px;
+    padding-left: 0px;
+  }
+  .powered-by {
+    text-align: center;
   }
 }
 .btn-footer {
@@ -159,9 +170,8 @@
   .footer-wrap {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding-left: 0;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
   .footer-main {
     // padding-top: 0;
@@ -181,6 +191,7 @@
     margin-right: 0;
   }
   .footer-main-container {
+    // margin-bottom: 20px;
     // display: flex;
     // justify-content: center;
     // align-items: baseline;
@@ -203,7 +214,6 @@
     display: flex;
     // text-align: start;
     flex-direction: column;
-    width: 231px;
   }
   .footer-main .footer-list-link:not(:last-child) {
     margin-bottom: 9px;

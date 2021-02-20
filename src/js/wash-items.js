@@ -30,6 +30,19 @@ export default [
     name: `Замена амортизатора`,
     price: `от 750р`,
   },
+  {
+    url: `https://images.ru.prom.st/683609539_w640_h640_slivnoj-nasos-dlya.jpg`,
+    description: `Стиральная машина не сливает воду.`,
+    name: `Замена насоса слива воды`,
+    price: `от 1200р`,
+  },
+  {
+    url: `https://blog.allo.ua/wp-content/uploads/Bosch-na-vystavke-novye-stiralnye-mashiny-s-funktsiej-ActiveOxygen.jpg`,
+    description: `Чистка каналов слива воды, замена шланги (заливная / сливная) и другой мелкий ремонт.`,
+    name: `Мелкий ремонт`,
+    price: `от 500р`,
+  },
+
   // {
   //   url: `https://lh3.googleusercontent.com/proxy/7xwJsbXfFLJDmxRoVjkMOC_Vkax5dkikJ16dBrZoaOpA1wKry6DbomgwoFS-vTzcUmh6cSkbkYJAULdCSRoA76hDP0oAH7G8KGIPpEkykuRB9HC66or0lwMRp2Z3TZzrRh4s_z-e5fjKhAZnm_fP`,
   //   description: `Стиральная машинка не сливает воду, возможен засор сливной системы или выход из строя водяной помпы`,

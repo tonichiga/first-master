@@ -18,6 +18,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  width: 370px;
   /* width: calc((100% - 60) / 3); 
   //   margin-right: 30px;
   //   margin-bottom: 30px;
@@ -30,14 +31,15 @@
 .portfolio-item-wrapper > .item-link {
   width: 100%;
   object-fit: contain;
+  height: 300px;
 }
 .portfolio .portfolio-pre-text {
   // display: flex;
   // text-align: start;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 25px;
-  //   padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
@@ -65,7 +67,7 @@
 .portfolio-item-wrapper {
   display: block;
   position: relative;
-  height: 294px;
+  height: px;
   overflow: hidden;
 }
 
@@ -74,8 +76,8 @@
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  max-width: 450px;
-  height: 294px;
+  // max-width: 450px;
+  height: 300px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transition: transform 250ms $defaul-cubic-bezier,

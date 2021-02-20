@@ -21,7 +21,7 @@
 }
 .third-logo {
   display: block;
-  text-align: end;
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 0.86;
@@ -37,4 +37,9 @@
 }
 .logo-wrapper {
   margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .third-logo {
+    text-align: end;
+  }
 }
