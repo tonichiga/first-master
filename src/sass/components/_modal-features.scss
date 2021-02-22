@@ -56,6 +56,14 @@
     ),
     url(../image/trade.png);
 }
+.tank {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(../image/tank.jpg);
+}
 .modal-features-wrapper.is-open {
   //   opacity: 1;
   transform: scale(1) translate(-50%, -50%);

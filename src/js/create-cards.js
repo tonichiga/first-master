@@ -44,7 +44,10 @@ function handlerCreateBake(e) {
 function handlerClickCard(e) {
   e.preventDefault();
 }
-if (location.pathname === "/portfolio.html") {
+if (
+  location.pathname === "/portfolio.html" ||
+  location.pathname === "/www.first-master.ru/portfolio.html"
+) {
   refs.frost.classList.add("hover");
   refs.list.insertAdjacentHTML("beforeend", template(frostItems));
   createCard();

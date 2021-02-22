@@ -7,6 +7,7 @@ import "./js/send-form.js";
 import "./js/create-cards.js";
 import "./js/open-modal-features";
 
+console.log("Success");
 if (location.pathname !== "/contacts.html") {
   console.log("yes");
   setTimeout(() => {

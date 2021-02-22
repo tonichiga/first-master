@@ -83,7 +83,7 @@ module.exports = (env) => ({
 
     new WebpackDeployFtp({
       dir: "./build/", // * 本地上传文件夹路径
-      remoteDir: "/www/first-master.ru/test/", // * 远程文件目录 注意：小心覆盖整个ftp服务器 default: /empty
+      remoteDir: "/www/first-master.ru/", // * 远程文件目录 注意：小心覆盖整个ftp服务器 default: /empty
       console: true, // 打印日志 default: false
       connect: {
         host: "bora.cityhost.com.ua", // * ftp服务器ip
@@ -92,9 +92,9 @@ module.exports = (env) => ({
         password: "33db7c7229", // * 用户密码
         secure: false,
         secureOptions: undefined,
-        connTimeout: 50000,
-        pasvTimeout: 100000,
-        keepalive: 100000,
+        connTimeout: 5000,
+        pasvTimeout: 1000,
+        keepalive: 1000,
       },
     }),
   ],
