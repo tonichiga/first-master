@@ -3,39 +3,57 @@
 <article class="modal-features-wrapper">
     <button type="button" class="btn-close"><i class="material-icons">close</i></button>
     <h3 class="modal-features-title-main">{{titleMain}}</h3>
+    {{#if description}}
     <p class="modal-features-description">
-        {{description1}}
-  <ul class="modal-features-list"><li>
+        {{description}}</p>
+    {{/if}}
+  <ul class="modal-features-list">
+      {{#if title1}}
+      <li class="modal-features-element">
       <h5 class="modal-features-subtitle">{{title1}}</h5>
       <p class="modal-features-description">
-         {{description2}}
+         {{description1}}
       </p>
-  </li>
-    <li>
+        </li>
+        {{/if}}
+        {{#if title2}}
+    <li class="modal-features-element">
         <h5 class="modal-features-subtitle">{{title2}}</h5>
-        <p class="modal-features-description">{{description3}}
+        <p class="modal-features-description">{{description2}}
 </p>
     </li>
-    <li>
+        {{/if}}
+        {{#if title3}}
+    <li class="modal-features-element">
         <h5 class="modal-features-subtitle">{{title3}}</h5>
+        <p class="modal-features-description">{{description3}}</p>
+    </li>
+        {{/if}}
+    {{#if title4}}
+    <li class="modal-features-element">
+        <h5 class="modal-features-subtitle">{{title4}}</h5>
         <p class="modal-features-description">{{description4}}</p>
     </li>
-    {{#if this}}
-    <li>
+    {{/if}}
+     {{#if title5}}
+    <li class="modal-features-element">
         <h5 class="modal-features-subtitle">{{title5}}</h5>
-        <p class="modal-features-description">{{description6}}</p>
+        <p class="modal-features-description">{{description5}}</p>
     </li>
     {{/if}}
   </ul>
-
-  </p>
     
-    </ul>
-    <h4 class="modal-features-title">{{title4}}</h4>
-    <p class="modal-features-description">{{description5}}</p>
-         <p class="modal-features-pretext">{{text}} <a href="./portfolio.html" class="price-link">
-             этой ссылке
-           </a>.</p>
+   
+    {{#if footerTitle}}
+   
+    <h4 class="modal-features-title">{{footerTitle}}</h4>
+    {{/if}}
+     {{#if footerDescription}}
+    <p class="modal-features-description padding">{{footerDescription}}</p>
+     {{/if}}
+     
+     <p class="modal-features-pretext">{{text}} <a href="./portfolio.html" class="price-link">этой ссылке</a>.</p>
+  
 </article>
          
 </div>

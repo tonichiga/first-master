@@ -70,7 +70,7 @@
 }
 .modal-features-title-main,
 .modal-features-title {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   text-transform: uppercase;
   border-bottom: 3px solid $accent-color;
   border-radius: 10px;
@@ -87,7 +87,8 @@
 }
 .modal-features-description {
   color: black;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  padding: 0;
   text-align: left;
 }
 .modal-open {
@@ -96,10 +97,14 @@
 .modal-features-list {
   // list-style: outside;
   text-align: left;
-  padding-left: 0px;
+  padding: 10px;
   margin: 0;
 }
-
+.padding {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
 .modal-features-item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -119,6 +124,17 @@
   color: $accent-color;
   font-weight: 700;
 }
+.modal-features-element {
+}
+.modal-features-element:not(:last-child) {
+  margin-bottom: 15px;
+}
+.padding {
+}
+.modal-features-pretext {
+  padding-top: 10px;
+  border-top: solid 4px $accent-color;
+}
 @media screen and (min-width: 768px) {
   .modal-features-wrapper {
     width: 768px;
@@ -135,7 +151,7 @@
   }
   .modal-features-description,
   .modal-features-list {
-    padding-left: 30px;
+    // padding-left: 30px;
 
     font-size: 16px;
     line-height: 22px;
@@ -161,12 +177,7 @@
   .modal-features-description,
   .modal-features-list,
   .modal-features-pretext {
-    padding: 0;
     font-size: 18px;
     line-height: 24px;
-  }
-  .modal-features-pretext {
-    padding-top: 10px;
-    border-top: solid 4px $accent-color;
   }
 }
