@@ -150,10 +150,13 @@
   transform: translateX(-50%);
 }
 .address-text {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.02em;
   color: $primary-text-color;
@@ -195,7 +198,7 @@
   flex-direction: column;
   position: relative;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 
   letter-spacing: 0.02em;

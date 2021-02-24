@@ -7,13 +7,14 @@
 }
 .contacts-list-city,
 .our-contacts-list {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
 
 .our-contacts:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .contacts-work-time-day {
   margin-bottom: 10px;
@@ -22,7 +23,20 @@
 .contacts-city-work,
 .contacts-work-time-title,
 .contacts-title {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+.contacts-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  height: 4px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: $accent-color;
+  transform: translateX(-50%);
 }
 
 .contacts-list-item-city:not(:last-child) {
@@ -38,7 +52,18 @@
 }
 .contacts-work-time-title {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.our-contacts {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.address-text {
+  &.footer-address-padding {
+    padding-top: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -46,7 +71,7 @@
     padding-top: 120px;
   }
   .map {
-    width: 500px !important;
+    width: 100% !important;
     height: 400px !important;
     display: block;
     margin: 0 auto;
@@ -83,23 +108,23 @@
   .our-contacts-list {
     margin: 0 auto;
     width: 400px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .contacts-work-time-title {
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .contacts-work-time-day,
   .contacts-work-time-time {
     font-size: 16px;
   }
   .map {
-    width: 700px !important;
+    width: 100% !important;
     height: 600px !important;
     display: block;
     margin: 0 auto;
   }
   .contacts-title {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }
