@@ -1,5 +1,4 @@
 if (location.pathname !== "/contacts.html") {
-  console.log("modal yes");
   (() => {
     const refs = {
       openModalBtn: document.querySelectorAll("[data-modal-open]"),

@@ -1,4 +1,7 @@
 .modal-features-backdrop {
+  // display: none;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   z-index: 200;
   top: 50%;
@@ -7,6 +10,13 @@
   width: 100%;
   transform: translate(-50%, -50%);
   background-color: rgba(71, 71, 71, 0.7);
+}
+.modal-features-backdrop.is-opened {
+  opacity: 1;
+  pointer-events: unset;
+}
+.modal-features-backdrop.is-opened > .modal-features-wrapper {
+  transform: scale(1) translate(-50%, -50%);
 }
 .modal-features-wrapper {
   overflow-y: auto;
@@ -65,7 +75,7 @@
     url(../image/tank.jpg);
 }
 .modal-features-wrapper.is-open {
-  //   opacity: 1;
+  // opacity: 1;
   transform: scale(1) translate(-50%, -50%);
 }
 .modal-features-title-main,

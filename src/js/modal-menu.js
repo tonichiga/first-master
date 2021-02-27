@@ -116,7 +116,6 @@ const body = document.querySelector("body");
 modalOpen.addEventListener("click", handlerOpenModal);
 
 function handlerOpenModal(e) {
-  console.log(e);
   body.insertAdjacentHTML("beforeend", modalMenu());
   //   (() => {
   //     const refs = {
