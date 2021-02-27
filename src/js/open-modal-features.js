@@ -12,11 +12,12 @@ const refs = {
   body: document.querySelector("body"),
   item: document.querySelector(".features-item"),
 };
-
-refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(noFrostItem));
-refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(washersItem));
-refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(tradeItem));
-refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(tankItem));
+if (location.pathname === "/index.html") {
+  refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(noFrostItem));
+  refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(washersItem));
+  refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(tradeItem));
+  refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(tankItem));
+}
 
 const modal = document.querySelectorAll(".modal-features-backdrop");
 
