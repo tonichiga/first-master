@@ -12,7 +12,7 @@ const refs = {
   body: document.querySelector("body"),
   item: document.querySelector(".features-item"),
 };
-if (location.pathname === "/index.html") {
+if (location.pathname === "/index.html" || location.pathname === "/") {
   refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(noFrostItem));
   refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(washersItem));
   refs.backdrop.insertAdjacentHTML("beforeend", featuresModal(tradeItem));

@@ -121,10 +121,10 @@
             ><span class="second-logo">Мастер</span>
           </div>
           <span class="third-logo"
-            >мы уже <span class="third-logo-title">в пути</span></span
+            >выезд <span class="third-logo-title">на дом</span></span
           >
         </a>
-        <button
+        <!-- <button
           type="button"
           class="menu-btn"
           aria-expanded="false"
@@ -143,75 +143,74 @@
               href="./image/sprite.svg#icon-close-menu"
             ></use>
           </svg>
-        </button>
-        <div class="menu-wrapper" data-menu>
-          <nav class="header-nav">
-            <!--Логотип сайта-->
-            <!--Навигационное меню в шапке-->
+        </button> -->
 
-            <ul class="site-nav list">
-              <li class="site-nav-list-item">
+        <!--Контактная информация-->
+      </div>
+      <div class="menu-wrapper" data-menu>
+        <nav class="header-nav">
+          <!--Логотип сайта-->
+          <!--Навигационное меню в шапке-->
+
+          <ul class="site-nav list">
+            <li class="site-nav-list-item">
+              <a
+                href="./index.html"
+                class="site-nav-text hover-focus link current"
+                >Главная</a
+              >
+            </li>
+            <li class="site-nav-list-item">
+              <a href="./portfolio.html" class="site-nav-text hover-focus link"
+                >Наши цены</a
+              >
+            </li>
+            <li class="site-nav-list-item">
+              <a href="./contacts.html" class="site-nav-text hover-focus link"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+          <address class="nav-address">
+            <ul class="address list">
+              <li class="address-item-list tel-item">
                 <a
-                  href="./index.html"
-                  class="site-nav-text hover-focus link current"
-                  >Главная</a
+                  href="tel:+380713754558"
+                  class="address-text link hover-focus"
                 >
+                  <svg class="icon-tel-svg">
+                    <use href="./image/sprite.svg#icon-tel-img"></use>
+                  </svg>
+                  +38 071 375 45 58
+                </a>
               </li>
-              <li class="site-nav-list-item">
+              <li class="address-item-list tel-item">
                 <a
-                  href="./portfolio.html"
-                  class="site-nav-text hover-focus link"
-                  >Наши цены</a
+                  href="tel:+380663716410"
+                  class="address-text link hover-focus"
                 >
+                  <svg class="viber-svg">
+                    <use href="./image/sprite.svg#viber5"></use>
+                  </svg>
+
+                  +38 066 371 64 10
+                </a>
               </li>
-              <li class="site-nav-list-item">
-                <a href="./contacts.html" class="site-nav-text hover-focus link"
-                  >Контакты</a
+              <li class="address-item-list mail-item">
+                <a
+                  lang="en"
+                  href="mailto:service@first-master.ru"
+                  class="address-text link hover-focus"
+                >
+                  <svg class="icon-mail-svg">
+                    <use href="./image/sprite.svg#icon-mail-img"></use>
+                  </svg>
+                  service@first-master.ru</a
                 >
               </li>
             </ul>
-            <address class="nav-address">
-              <ul class="address list">
-                <li class="address-item-list tel-item">
-                  <a
-                    href="tel:+380713454558"
-                    class="address-text link hover-focus"
-                  >
-                    <svg class="icon-tel-svg">
-                      <use href="./image/sprite.svg#icon-tel-img"></use>
-                    </svg>
-                    +38 071 345 45 58
-                  </a>
-                </li>
-                <li class="address-item-list tel-item">
-                  <a
-                    href="tel:+380663716410"
-                    class="address-text link hover-focus"
-                  >
-                    <svg class="viber-svg">
-                      <use href="./image/sprite.svg#viber5"></use>
-                    </svg>
-
-                    +38 066 371 64 10
-                  </a>
-                </li>
-                <li class="address-item-list mail-item">
-                  <a
-                    lang="en"
-                    href="mailto:service@first-master.ru"
-                    class="address-text link hover-focus"
-                  >
-                    <svg class="icon-mail-svg">
-                      <use href="./image/sprite.svg#icon-mail-img"></use>
-                    </svg>
-                    service@first-master.ru</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </nav>
-        </div>
-        <!--Контактная информация-->
+          </address>
+        </nav>
       </div>
     </header>
 
@@ -219,14 +218,128 @@
       <!-- Герой -->
       <section class="hero">
         <h1 class="hero-title">
-          Быстрые и эффективные решения <br />
-          по ремонту стиральных машин <br />
-          и холодильников
+          Ремонт стиральных <br />
+          машин и холодильников с выездом на дом, недорого
         </h1>
 
         <button data-modal-open class="services-btn general-btn" type="button">
-          Заказать услугу
+          Обратный звонок
         </button>
+      </section>
+
+      <!-- Чем мы занимаемся -->
+      <section class="features">
+        <div class="container">
+          <h2 class="features-title">Чем мы занимаемся</h2>
+
+          <div class="features-item list">
+            <ul class="features-item-list-element">
+              <li class="features-item-list features-container">
+                <div class="features-item-container">
+                  <img
+                    class="features-img"
+                    src="./image/preview.jpg"
+                    alt="компьютер"
+                    data-id="1"
+                    width="320"
+                    height="240"
+                  />
+
+                  <!-- <img
+                    class="feature-img"
+                    src="./image/what-we-do/what-we-do-1.jpg"
+                    alt="десктопные приложения"
+                    height="294"
+                  /> -->
+                  <p class="features-text">
+                    Ремонт стиральных машин
+                    <span class="features-title-click"
+                      >Нажмите ознакомиться</span
+                    >
+                  </p>
+                </div>
+              </li>
+
+              <li class="features-item-list features-container">
+                <div class="features-item-container">
+                  <img
+                    class="features-img"
+                    src="./image/no-frost.jpg"
+                    alt="мобильные решения"
+                    data-id="2"
+                    width="320"
+                    height="240"
+                  />
+
+                  <!-- <img
+                    class="feature-img"
+                    src="./image/what-we-do/what-we-do-2.jpg"
+                    alt="мобильные приложения"
+                    height="294"
+                  /> -->
+                  <p class="features-text">
+                    Ремонт холодильников
+                    <span class="features-title-click"
+                      >Нажмите ознакомиться</span
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="features-item-list-element">
+              <li class="features-item-list features-container">
+                <div class="features-item-container">
+                  <img
+                    class="features-img"
+                    src="./image/trade.png"
+                    alt="десктопные решения"
+                    data-id="3"
+                    width="320"
+                    height="240"
+                  />
+
+                  <!-- <img
+                    class="feature-img"
+                    src="./image/what-we-do/what-we-do-3.jpg"
+                    alt="дизайнерские решения"
+                    height="294"
+                  /> -->
+                  <p class="features-text">
+                    Покупка б/у техники
+                    <span class="features-title-click"
+                      >Нажмите ознакомиться</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="features-item-list features-container">
+                <div class="features-item-container">
+                  <img
+                    class="features-img cover"
+                    src="./image/tank.jpg"
+                    alt="десктопные решения"
+                    data-id="4"
+                    width="320"
+                    height="240"
+                  />
+
+                  <!-- <img
+                    class="feature-img"
+                    src="./image/what-we-do/what-we-do-3.jpg"
+                    alt="дизайнерские решения"
+                    height="294"
+                  /> -->
+                  <p class="features-text">
+                    Ремонт водонагревальных баков
+                    <span class="features-title-click"
+                      >Нажмите ознакомиться</span
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- О нас -->
@@ -287,101 +400,6 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <!-- Чем мы занимаемся -->
-      <section class="features">
-        <div class="container">
-          <h2 class="features-title">Чем мы занимаемся</h2>
-
-          <div class="features-item list">
-            <ul class="features-item-list-element">
-              <li class="features-item-list features-container">
-                <div class="features-item-container">
-                  <img
-                    class="features-img"
-                    src="./image/preview.jpg"
-                    alt="компьютер"
-                    data-id="1"
-                    width="320"
-                    height="240"
-                  />
-
-                  <!-- <img
-                    class="feature-img"
-                    src="./image/what-we-do/what-we-do-1.jpg"
-                    alt="десктопные приложения"
-                    height="294"
-                  /> -->
-                  <p class="features-text">Ремонт стиральных машин</p>
-                </div>
-              </li>
-
-              <li class="features-item-list features-container">
-                <div class="features-item-container">
-                  <img
-                    class="features-img"
-                    src="./image/no-frost.jpg"
-                    alt="мобильные решения"
-                    data-id="2"
-                    width="320"
-                    height="240"
-                  />
-
-                  <!-- <img
-                    class="feature-img"
-                    src="./image/what-we-do/what-we-do-2.jpg"
-                    alt="мобильные приложения"
-                    height="294"
-                  /> -->
-                  <p class="features-text">Ремонт холодильников</p>
-                </div>
-              </li>
-            </ul>
-            <ul class="features-item-list-element">
-              <li class="features-item-list features-container">
-                <div class="features-item-container">
-                  <img
-                    class="features-img"
-                    src="./image/trade.png"
-                    alt="десктопные решения"
-                    data-id="3"
-                    width="320"
-                    height="240"
-                  />
-
-                  <!-- <img
-                    class="feature-img"
-                    src="./image/what-we-do/what-we-do-3.jpg"
-                    alt="дизайнерские решения"
-                    height="294"
-                  /> -->
-                  <p class="features-text">Покупка б/у техники</p>
-                </div>
-              </li>
-              <li class="features-item-list features-container">
-                <div class="features-item-container">
-                  <img
-                    class="features-img cover"
-                    src="./image/tank.jpg"
-                    alt="десктопные решения"
-                    data-id="4"
-                    width="320"
-                    height="240"
-                  />
-
-                  <!-- <img
-                    class="feature-img"
-                    src="./image/what-we-do/what-we-do-3.jpg"
-                    alt="дизайнерские решения"
-                    height="294"
-                  /> -->
-                  <p class="features-text">Ремонт водонагревальных баков</p>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -579,7 +597,7 @@
                   ><span class="second-logo footer-logo">Мастер</span>
                 </div>
                 <span class="third-logo in-footer"
-                  >мы уже <span class="third-logo-title">в пути</span></span
+                  >выезд <span class="third-logo-title">на дом</span></span
                 >
               </a>
             </div>
@@ -594,8 +612,8 @@
                   >
                 </li>
                 <li class="footer-list-link">
-                  <a href="tel:+380713454558" class="footer-tel-link link"
-                    >+38 071 345 45 58</a
+                  <a href="tel:+380713754558" class="footer-tel-link link"
+                    >+38 071 375 45 58</a
                   >
                 </li>
               </ul>
@@ -605,7 +623,7 @@
               class="services-btn general-btn footer btn-footer"
               type="button"
             >
-              Заказать услугу
+              Обратный звонок
             </button>
           </div>
 
