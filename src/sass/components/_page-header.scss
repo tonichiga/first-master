@@ -240,13 +240,29 @@
   opacity: 1;
   pointer-events: all;
 }
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
 @media screen and (min-width: 480px) {
   @media screen and (max-width: 767px) {
   }
 }
 @media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .menu-wrapper.mobile {
+    display: block;
+  }
   .menu-wrapper {
     position: unset;
+    padding-top: 0;
     top: 0;
     height: auto;
     width: unset;

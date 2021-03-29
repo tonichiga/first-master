@@ -146,8 +146,75 @@
         </button> -->
 
         <!--Контактная информация-->
+        <div class="menu-wrapper desktop" data-menu>
+          <nav class="header-nav">
+            <!--Логотип сайта-->
+            <!--Навигационное меню в шапке-->
+
+            <ul class="site-nav list">
+              <li class="site-nav-list-item">
+                <a
+                  href="./index.html"
+                  class="site-nav-text hover-focus link current"
+                  >Главная</a
+                >
+              </li>
+              <li class="site-nav-list-item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav-text hover-focus link"
+                  >Наши цены</a
+                >
+              </li>
+              <li class="site-nav-list-item">
+                <a href="./contacts.html" class="site-nav-text hover-focus link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <address class="nav-address">
+              <ul class="address list">
+                <li class="address-item-list tel-item">
+                  <a
+                    href="tel:+380713754558"
+                    class="address-text link hover-focus"
+                  >
+                    <svg class="icon-tel-svg">
+                      <use href="./image/sprite.svg#icon-tel-img"></use>
+                    </svg>
+                    +38 071 375 45 58
+                  </a>
+                </li>
+                <li class="address-item-list tel-item">
+                  <a
+                    href="tel:+380663716410"
+                    class="address-text link hover-focus"
+                  >
+                    <svg class="viber-svg">
+                      <use href="./image/sprite.svg#viber5"></use>
+                    </svg>
+
+                    +38 066 371 64 10
+                  </a>
+                </li>
+                <li class="address-item-list mail-item">
+                  <a
+                    lang="en"
+                    href="mailto:service@first-master.ru"
+                    class="address-text link hover-focus"
+                  >
+                    <svg class="icon-mail-svg">
+                      <use href="./image/sprite.svg#icon-mail-img"></use>
+                    </svg>
+                    service@first-master.ru</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </nav>
+        </div>
       </div>
-      <div class="menu-wrapper" data-menu>
+      <div class="menu-wrapper mobile" data-menu>
         <nav class="header-nav">
           <!--Логотип сайта-->
           <!--Навигационное меню в шапке-->
@@ -239,10 +306,10 @@
                   <img
                     class="features-img"
                     src="./image/preview.jpg"
-                    alt="компьютер"
-                    data-id="1"
+                    alt="Стиральная машина"
                     width="320"
                     height="240"
+                    data-id="1"
                   />
 
                   <!-- <img
@@ -251,9 +318,9 @@
                     alt="десктопные приложения"
                     height="294"
                   /> -->
-                  <p class="features-text">
+                  <p class="features-text" data-id="1">
                     Ремонт стиральных машин
-                    <span class="features-title-click"
+                    <span data-id="1" class="features-title-click"
                       >Нажмите ознакомиться</span
                     >
                   </p>
@@ -265,7 +332,7 @@
                   <img
                     class="features-img"
                     src="./image/no-frost.jpg"
-                    alt="мобильные решения"
+                    alt="Холодильник"
                     data-id="2"
                     width="320"
                     height="240"
@@ -277,9 +344,9 @@
                     alt="мобильные приложения"
                     height="294"
                   /> -->
-                  <p class="features-text">
+                  <p class="features-text" data-id="2">
                     Ремонт холодильников
-                    <span class="features-title-click"
+                    <span data-id="2" class="features-title-click"
                       >Нажмите ознакомиться</span
                     >
                   </p>
@@ -292,7 +359,7 @@
                   <img
                     class="features-img"
                     src="./image/trade.png"
-                    alt="десктопные решения"
+                    alt="Обмен"
                     data-id="3"
                     width="320"
                     height="240"
@@ -304,9 +371,9 @@
                     alt="дизайнерские решения"
                     height="294"
                   /> -->
-                  <p class="features-text">
+                  <p class="features-text" data-id="3">
                     Покупка б/у техники
-                    <span class="features-title-click"
+                    <span data-id="3" class="features-title-click"
                       >Нажмите ознакомиться</span
                     >
                   </p>
@@ -317,7 +384,7 @@
                   <img
                     class="features-img cover"
                     src="./image/tank.jpg"
-                    alt="десктопные решения"
+                    alt="Водонагревательный бак"
                     data-id="4"
                     width="320"
                     height="240"
@@ -329,9 +396,9 @@
                     alt="дизайнерские решения"
                     height="294"
                   /> -->
-                  <p class="features-text">
+                  <p class="features-text" data-id="4">
                     Ремонт водонагревальных баков
-                    <span class="features-title-click"
+                    <span data-id="4" class="features-title-click"
                       >Нажмите ознакомиться</span
                     >
                   </p>
@@ -345,61 +412,95 @@
       <!-- О нас -->
       <section class="about-us list">
         <div class="container">
-          <h2 class="about-us-title-main">Наши преимущества</h2>
+          <!-- <h2 class="about-us-title-main">Как вызвать мастера на дом для ремонта стиральных машин и
+            холодильников</h2> -->
+          <p class="about-us-text title-before">
+            Как вызвать мастера на дом для ремонта стиральных машин и
+            холодильников
+          </p>
           <ul class="about-us-item list">
             <li class="about-us-item-list">
               <div class="about-us-container-svg">
-                <svg class="about-us-icon-svg">
+                <!-- <svg class="about-us-icon-svg">
                   <use href="./image/sprite.svg#icon-about-us-1"></use>
-                </svg>
+                </svg> -->
+                <img
+                  src="./image/features-new/1.png"
+                  alt="читает книгу"
+                  width="70"
+                  height="70"
+                />
               </div>
 
-              <h3 class="about-us-title">гарантия</h3>
+              <h3 class="about-us-title">Знакомство</h3>
               <p class="about-us-text">
-                Мы всегда даём гарантию качества на любой вид ремонта Вашей
-                техники.
+                Ознакомиться с описанием на сайте где вы найдёте много полезной
+                информации.
               </p>
             </li>
 
             <li class="about-us-item-list">
               <div class="about-us-container-svg">
-                <svg class="about-us-icon-svg">
+                <!-- <svg class="about-us-icon-svg">
                   <use href="./image/sprite.svg#icon-about-us-2"></use>
-                </svg>
+                </svg> -->
+                <img
+                  src="./image/features-new/2.png"
+                  alt="телефон"
+                  width="70"
+                  height="70"
+                />
               </div>
-              <h3 class="about-us-title">пунктуальность</h3>
+              <h3 class="about-us-title">Звонок</h3>
               <p class="about-us-text">
-                Мы ценим время наших клиентов и поэтому стараемся выполнять
-                поставленную задачу своевременно и в кратчайшие сроки.
+                Позвонить по номеру телефона ☎ указанному в разделе контакты для
+                соединения с мастером.
               </p>
             </li>
 
             <li class="about-us-item-list">
               <div class="about-us-container-svg">
-                <svg class="about-us-icon-svg">
+                <!-- <svg class="about-us-icon-svg">
                   <use href="./image/sprite.svg#icon-about-us-3"></use>
-                </svg>
+                </svg> -->
+                <img
+                  src="./image/features-new/3.png"
+                  alt="лампочка"
+                  width="70"
+                  height="70"
+                />
               </div>
-              <h3 class="about-us-title">планирование</h3>
+              <h3 class="about-us-title">Выяснение неисправности</h3>
               <p class="about-us-text">
-                Разработка детального плана обслуживания Вашей техники и
-                придерживаемость стандартам качественного ремонта.
+                Постарайтесь объяснить - что случилось с вашей техникой её
+                название, для того чтобы мастер смог сориентировать вас по цене.
               </p>
             </li>
 
             <li class="about-us-item-list">
               <div class="about-us-container-svg">
-                <svg class="about-us-icon-svg">
+                <!-- <svg class="about-us-icon-svg">
                   <use href="./image/sprite.svg#icon-about-us-4"></use>
-                </svg>
+                </svg> -->
+                <img
+                  src="./image/features-new/4.png"
+                  alt="телефон"
+                  width="70"
+                  height="70"
+                />
               </div>
-              <h3 class="about-us-title">современные технологии</h3>
+              <h3 class="about-us-title">Быстрое реагирование</h3>
               <p class="about-us-text">
-                Использования современных технологий и оборудования позволяют
-                значительно увеличить качество предоставляемого нами сервиса.
+                Мастер выезжает к вам по указанному адресу, зачастую ремонт
+                составляет от 1-3х часов ⏰.
               </p>
             </li>
           </ul>
+          <p class="about-us-text title-after">
+            После завершения ремонта стиральных машин или холодильников мастер
+            выдаст вам гарантийный талон на проведенную работу и вы снова
+            получите удовольствие от своей техники
+          </p>
         </div>
       </section>
 

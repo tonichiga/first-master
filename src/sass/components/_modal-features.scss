@@ -25,8 +25,8 @@
   left: 50%;
   height: 90vh;
   width: 95%;
-  padding: 30px;
-  padding-top: 40px;
+  padding: 30px 0px 0 0px;
+  padding-top: 40px 0px 0 0px;
   overflow-x: hidden;
   text-align: center;
   line-height: 20px;
@@ -107,7 +107,7 @@
 .modal-features-list {
   // list-style: outside;
   text-align: left;
-  padding: 10px;
+  padding: 10px 20px 0 20px;
   margin: 0;
 }
 .padding {
@@ -134,22 +134,51 @@
   color: $accent-color;
   font-weight: 700;
 }
-.modal-features-element {
-}
+
 .modal-features-element:not(:last-child) {
   margin-bottom: 15px;
 }
-.padding {
-}
+
 .modal-features-pretext {
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-top: solid 4px $accent-color;
 }
+
+.modal-sticky-close {
+  position: sticky;
+
+  bottom: 0;
+  background-color: #fff;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  & button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    width: 200px;
+    height: 50px;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    transition: 250ms $defaul-cubic-bezier;
+  }
+  & button:hover,
+  & button:focus {
+    transform: scale(1.1);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal-features-wrapper {
     width: 768px;
     height: 80vh;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
   }
   .modal-features-subtitle {
     font-size: 18px;
@@ -170,7 +199,7 @@
 @media screen and (min-width: 1200px) {
   .modal-features-wrapper {
     width: 1000px;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
   }
   .modal-features-subtitle {
     font-size: 20px;
